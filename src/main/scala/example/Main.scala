@@ -4,7 +4,11 @@ import java.math.BigInteger
 
 object Main {
   def main(args: Array[String]): Unit = {
-
+    val t = scala.io.StdIn.readInt()
+    (1 to t).foreach { _ =>
+      val input = scala.io.StdIn.readLine()
+      println(nextPallindrome(input.trim))
+    }
   }
 
   def nextPallindrome(num: String): String = {
