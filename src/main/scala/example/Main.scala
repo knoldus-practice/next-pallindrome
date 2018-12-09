@@ -16,8 +16,8 @@ object Main {
     if (right.compareTo(left.reverse) < 0) {
       left + middle + left.reverse
     } else {
-      val next = new BigInteger(left + middle).add(BigInteger.ONE).toString
-      next.substring(0, left.length + middle.length) + next.reverse.substring(middle.length)
+      val nextPrefix = new BigInteger(left + middle).add(BigInteger.ONE).toString
+      nextPrefix.substring(0, left.length + middle.length) + nextPrefix.reverse.substring(middle.length)
     }
   }
 }
